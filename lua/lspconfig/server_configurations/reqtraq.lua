@@ -11,7 +11,7 @@ local default_capabilities = {
 return {
   default_config = {
     cmd = { 'reqtraq', 'lsp' },
-    filetypes = { 'c', 'cpp', 'go' },
+    filetypes = { 'c', 'cpp', 'go', 'markdown' },
     root_dir = function(fname)
       return util.root_pattern(unpack(root_files))(fname) or util.find_git_ancestor(fname)
     end,
